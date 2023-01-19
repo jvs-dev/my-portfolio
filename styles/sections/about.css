@@ -1,0 +1,12 @@
+#section-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    justify-content: center;
+}
+.about__p {
+    width: 60%;
+    text-align: center;
+    margin: 40px 0px;
+}

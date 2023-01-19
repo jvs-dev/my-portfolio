@@ -1,0 +1,30 @@
+.linear-btn {
+    border: 0px;
+    background: linear-gradient(45deg, var(--blue), var(--blue), var(--cyan), var(--blue), var(--blue)) no-repeat;
+    cursor: pointer;
+    border: 0px;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    padding: 5px 20px;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 500;
+    background-size: 400% 400%;
+    animation: linear-btn-animation 2s linear infinite;
+    transition: 0.2s;
+}
+
+.linear-btn:hover {
+    transform: scale(1.05);
+    letter-spacing: 2px;
+}
+
+@keyframes linear-btn-animation {
+    0% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

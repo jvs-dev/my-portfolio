@@ -1,0 +1,28 @@
+#darklight-btn {
+    background-color: var(--body-bg-color);
+    padding: 4px;
+    display: flex;
+    width: 98px;
+    margin-right: 40px;
+    border: 0px;
+    outline: 0px;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+
+.darklight-btn__icon {
+    font-size: 25px;
+    color: var(--text-color);
+    background-color: var(--bg-cards);
+    border-radius: 100%;
+    padding: 8px;
+    transition: 0.5s;
+    border: solid 2px var(--bg-cards);
+}
+
+.darklight-btn__icon.light {
+    color: #fff;
+    box-shadow: inset 0px 4px 6px rgba(255, 255, 255, 0.527);
+    transform: translateX(100%);
+}

@@ -1,0 +1,28 @@
+:root {
+    --body-bg-color: #110F18;
+    --text-color: #7E7E9F;
+    --blue: #0E64E4;
+    --cyan: #0ECAE4;
+    --bg-cards: #201D2F;
+    --black: #000;
+    --white: #fff;
+}
+
+.light {
+    --body-bg-color: #DCE2EC;
+    --text-color: #7E7E9F;
+    --blue: #0E64E4;
+    --cyan: #0ECAE4;
+    --bg-cards: #C3C2FD;
+    --black: #fff;
+    --white: #110F18;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--body-bg-color);
+    transition: 0.5s;
+    overflow: hidden;
+}
+

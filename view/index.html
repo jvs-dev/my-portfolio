@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="../assets/page-icon/Page icon.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--styles-->
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/common.css">
+    <!--components-->
+    <link rel="stylesheet" href="../styles/components/header.css">
+    <link rel="stylesheet" href="../styles/components/scrollbar.css">
+    <link rel="stylesheet" href="../styles/components/tittle.css">
+    <link rel="stylesheet" href="../styles/components/text.css">
+    <link rel="stylesheet" href="../styles/components/buttons/darklight.css">
+    <link rel="stylesheet" href="../styles/components/buttons/menutoggle.css">
+    <link rel="stylesheet" href="../styles/components/buttons/border-btn.css">
+    <link rel="stylesheet" href="../styles/components/buttons/linear-btn.css">
+    <link rel="stylesheet" href="../styles/components/buttons/see-more.css">
+    <!--sections-->
+    <link rel="stylesheet" href="../styles/sections/loading.css">
+    <link rel="stylesheet" href="../styles/sections/menu.css">
+    <link rel="stylesheet" href="../styles/sections/home.css">
+    <link rel="stylesheet" href="../styles/sections/about.css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <section id="section-loading">
+        <div class="loading__container">
+            <div class="loading__ring"></div>
+            <div class="loading__ring"></div>
+            <div class="loading__ring"></div>
+            <span class="loading__span">Loading...</span>
+        </div>
+    </section>
+    <section id="section-menu">
+        <nav class="menu__nav">
+            <a class="menu__nav__a" href="#section-home" id="scroll-to-home">Inicio</a>
+            <a href="#section-about" class="menu__nav__a">Sobre mim</a>
+            <a href="#" class="menu__nav__a">Habilidades</a>
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Projetos
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Destaques</a></li>
+                    <li><a class="dropdown-item" href="#">Todos</a></li>
+                </ul>
+            </div>
+            <a href="#" class="menu__nav__a">Contato</a>
+        </nav>
+    </section>
+    <main id="main">
+        <header class="main__header">
+            <div class="header__div--1">
+                <a href="index.html" class="header__a"><img class="header__logo" src="../assets/img/logo.jpg"
+                        alt=""></a>
+                <div class="header__div--2">
+                    <button id="darklight-btn"><ion-icon class="darklight-btn__icon"
+                            name="bulb-outline"></ion-icon></button>
+                    <button id="menutoggle-btn"></button>
+                </div>
+            </div>
+            <div class="header__border"></div>
+        </header>
+
+        <section id="section-home">
+            <div class="home__div--1">
+                <h1 class="home__h1 title--h1" id="h1-animated-writing"></h1>
+                <p class="home__p"></p>
+                <div class="home__div--2">
+                    <button class="home__button linear-btn">Download CV</button>
+                    <button class="home__button border-btn">Entrar em contato</button>
+                </div>
+            </div>
+            <img class="home__img" src="../assets/img/my photo.png" alt="">
+        </section>
+        <section id="section-about">
+            <h1 class="title--h1">Sobre mim</h1>
+            <p class="about__p text--p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, deserunt
+                voluptas!
+                Dolorum, pariatur suscipit quis ipsa eius quas beatae ab. Quam nemo facere officia alias vitae minima
+                facilis illum enim! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam labore cumque
+                distinctio repudiandae quae qui vel ducimus ut explicabo maxime quam quo fugit, nulla ea neque eligendi
+                illum. Tempora, repudiandae.</p>
+            <button class="learn-more">
+                <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Ver Mais</span>
+            </button>
+        </section>
+
+    </main>
+
+    <script src="../scipt/sections/menu.js"></script>
+    <script src="../scipt/sections/home.js"></script>
+    <script src="../scipt/sections/loading.js"></script>
+    <script src="../scipt/components/menutoggle-btn.js"></script>
+    <script src="../scipt/components/darklight-btn.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
