@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -23,11 +23,13 @@
     <link rel="stylesheet" href="../styles/components/buttons/border-btn.css">
     <link rel="stylesheet" href="../styles/components/buttons/linear-btn.css">
     <link rel="stylesheet" href="../styles/components/buttons/see-more.css">
+    <link rel="stylesheet" href="../styles/components/cards/card-skills.css">
     <!--sections-->
     <link rel="stylesheet" href="../styles/sections/loading.css">
     <link rel="stylesheet" href="../styles/sections/menu.css">
     <link rel="stylesheet" href="../styles/sections/home.css">
     <link rel="stylesheet" href="../styles/sections/about.css">
+    <link rel="stylesheet" href="../styles/sections/skills.css">
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,6 +38,8 @@
         rel="stylesheet">
     <!--bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -91,7 +95,7 @@
             </div>
             <img class="home__img" src="../assets/img/my photo.png" alt="">
         </section>
-        <section id="section-about">
+        <section id="section-about" data-aos="fade-right">
             <h1 class="title--h1">Sobre mim</h1>
             <p class="about__p text--p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, deserunt
                 voluptas!
@@ -107,13 +111,77 @@
             </button>
         </section>
 
+
+
+
+
+
+
+        <section id="section-skills" data-aos="fade-right">
+            <h1 class="skills__h1 title--h1">Habilidades</h1>
+            <div class="skills__div">
+                <article class="skills__article card-skills">
+                    <h3 class="card__title">HTML</h3>
+                    <ion-icon class="card__icon" name="logo-html5"></ion-icon>
+                </article>
+                <article class="skills__article card-skills">
+                    <h3 class="card__title">CSS</h3>
+                    <ion-icon class="card__icon" name="logo-css3"></ion-icon>
+                </article>
+                <article class="skills__article card-skills">
+                    <h3 class="card__title">JavaScript</h3>
+                    <ion-icon class="card__icon" name="logo-javascript"></ion-icon>
+                </article>
+                <article class="skills__article card-skills">
+                    <h3 class="card__title">nodeJS</h3>
+                    <ion-icon class="card__icon" name="logo-nodejs"></ion-icon>
+                </article>
+                <article class="skills__article card-skills">
+                    <h3 class="card__title">Figma</h3>
+                    <ion-icon class="card__icon" name="logo-figma"></ion-icon>
+                </article>
+                <article class="skills__article card-skills">
+                    <h3 class="card__title">GitHub</h3>
+                    <ion-icon class="card__icon" name="logo-github"></ion-icon>
+                </article>
+                <article class="skills__article card-skills">
+                    <h3 class="card__title">Git</h3>
+                    <i class="card__icon bi bi-git"></i>
+                </article>
+                <article class="skills__article card-skills">
+                    <h3 class="card__title">Sass</h3>
+                    <ion-icon class="card__icon" name="logo-sass"></ion-icon>
+                </article>
+                <article class="skills__article card-skills">
+                    <h3 class="card__title">Bootstrap</h3>
+                    <i class="card__icon bi bi-bootstrap-fill"></i>
+                </article>
+                <article class="skills__article card-skills">
+                    <h3 class="card__title">Firebase</h3>
+                    <ion-icon class="card__icon" name="logo-firebase"></ion-icon>
+                </article>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
     </main>
 
-    <script src="../scipt/sections/menu.js"></script>
-    <script src="../scipt/sections/home.js"></script>
-    <script src="../scipt/sections/loading.js"></script>
-    <script src="../scipt/components/menutoggle-btn.js"></script>
-    <script src="../scipt/components/darklight-btn.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../script/sections/menu.js"></script>
+    <script src="../script/sections/home.js"></script>
+    <script src="../script/sections/loading.js"></script>
+    <script src="../script/components/menutoggle-btn.js"></script>
+    <script src="../script/components/darklight-btn.js"></script>
+    <script src="../script/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
